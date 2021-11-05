@@ -17,13 +17,11 @@ def test_calculator_add():
 def test_calculator_subtract():
     calculator = Calculator()
     answer = calculator.subtract(1,2)
-
     assert answer == -1
 
 def test_calculator_multiply():
     calculator = Calculator()
     answer = calculator.multiply(6,2)
-
     assert answer == 12
 
 def test_calculator_divide():
