@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    """inded  Route Response"""
+    """indexed Route Response"""
     return render_template('index.html')
 
 @app.route("/bad/<value1>/<value2>")
