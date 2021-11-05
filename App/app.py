@@ -2,7 +2,7 @@
 from flask import Flask
 from flask import render_template
 
-from calc_mod.calculator import Simple
+from calc_mod.calculator import Calculator
 app = Flask(__name__)
 
 @app.route("/")
@@ -20,7 +20,7 @@ def bad_calc(value1,value2):
 @app.route("/good/<float:value1>/<float:value2>")
 def good_calc(value1,value2):
     """good calc Route Response"""
-    calculator = Simple()
+    calculator = Calculator()
     calculator.add(value1,value2)
     response = "The result of the calculation is: " + str(calculator.result) + '<a href="/"> back</a>'
     return response
