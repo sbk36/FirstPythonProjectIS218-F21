@@ -1,4 +1,5 @@
 Flask
 uwsgi
+pytest-cov
 pytest-pylint
 pytest-flake8
