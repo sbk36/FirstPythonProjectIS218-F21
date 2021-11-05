@@ -1,4 +1,5 @@
 """A simple calc_mod module"""
+
 class Calculator:
     """A simple calc_mod class"""
 
