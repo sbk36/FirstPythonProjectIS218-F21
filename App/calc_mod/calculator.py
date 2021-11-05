@@ -28,4 +28,3 @@ class Calculator:
         """divide Two Numbers"""
         self.result = value_one / value_two
         return self.result
-

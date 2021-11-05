@@ -22,5 +22,5 @@ def good_calc(value1,value2):
     """good calc Route Response"""
     calculator = Calculator()
     calculator.add(value1,value2)
-    response = "The result of the calculation is: " + str(calculator.result) + '<a href="/"> back</a>'
+    response = "Result" + str(calculator.result) + '<a href="/"> back</a>'
     return response
