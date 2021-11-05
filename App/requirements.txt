@@ -1,6 +1,4 @@
 Flask
 uwsgi
-pytest
-pycodestyle
 pytest-pylint
 pytest-flake8
