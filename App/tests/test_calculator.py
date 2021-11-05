@@ -7,9 +7,9 @@ from calc_mod.calculator import Calculator
 
 def test_zero_division():
     """test_zero_division"""
-
     with pytest.raises(ZeroDivisionError):
-        1 / 0
+        calculator = Calculator()
+        calculator.divide(4,0)
 
 def test_simple_instance():
     """test_simple_instance"""
@@ -33,9 +33,3 @@ def test_calculator_multiply():
     calculator = Calculator()
     answer = calculator.multiply(6,2)
     assert answer == 12
-
-def test_calculator_divide():
-    """Test Division"""
-    calculator = Calculator()
-    answer = calculator.divide(4,2)
-    assert answer == 2
