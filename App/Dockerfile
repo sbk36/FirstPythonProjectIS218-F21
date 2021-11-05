@@ -14,6 +14,6 @@ USER myuser
 RUN pip install --user -r requirements.txt
 #If you uncomment the line below you can run the test and lint when the container is built.
 #You can open a terminal to run the tests manually
-#RUN pytest --pylint --pylint-rcfile=tests/.pylintrc
+RUN pytest --pylint --pylint-rcfile=tests/.pylintrc
 # uncommment to run the command to start uWSGI, you can't run tests and start the server.
-CMD ["uwsgi", "app.ini"]
+#CMD ["uwsgi", "app.ini"]
