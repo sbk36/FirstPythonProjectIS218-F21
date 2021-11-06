@@ -11,6 +11,12 @@ def test_zero_division():
         calculator = Calculator()
         calculator.divide(4,0)
 
+def test_division():
+    """test_division"""
+    calculator = Calculator()
+    answer = calculator.divide(4, 2)
+    assert answer == 2
+
 def test_simple_instance():
     """test_simple_instance"""
     calculator = Calculator()

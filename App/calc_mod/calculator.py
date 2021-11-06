@@ -3,7 +3,6 @@
 class Calculator:
     """A simple calc_mod class"""
 
-    history = []
     result = 0
 
     def __init__(self):
@@ -18,7 +17,6 @@ class Calculator:
         """Subtract Two Numbers"""
         self.result = value_one - value_two
         return self.result
-
 
     def multiply(self, value_one : float, value_two : float):
         """multiply Two Numbers"""
