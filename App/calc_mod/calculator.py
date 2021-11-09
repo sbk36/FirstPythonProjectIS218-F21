@@ -2,7 +2,6 @@
 
 class Calculator:
     """A simple calc_mod class"""
-
     result = 0
 
     def __init__(self):
