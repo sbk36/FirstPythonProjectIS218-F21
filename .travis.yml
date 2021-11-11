@@ -12,6 +12,7 @@ script:
 
 branches:
   only:
+    - calc_Refactor_SK
     - calc_part_2_SK
     - master
     - development
