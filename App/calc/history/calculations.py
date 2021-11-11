@@ -19,7 +19,7 @@ class Calculations:
     @staticmethod
     def get_first_calculation():
         """ get_first_calculation"""
-        return Calculations.history[-1]
+        return Calculations.history[0]
     @staticmethod
     def get_calculation(num):
         """ get a specific calculation from history"""
