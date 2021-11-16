@@ -63,3 +63,8 @@ def test_history_count(clear_history, setup_addition_calculation_fixture,
     """Testing getting the history count"""
     # pylint: disable=unused-argument,redefined-outer-name
     assert Calculations.count_history() == 2.0
+def test_get_calc_last_result_object(clear_history, setup_addition_calculation_fixture):
+    """Testing getting the last calculation from the history"""
+    # pylint: disable=unused-argument,redefined-outer-name
+    #This test if it returns the last calculation as an object
+    assert isinstance(Calculations.get_last_calculation(), Addition)

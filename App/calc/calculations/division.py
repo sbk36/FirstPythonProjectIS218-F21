@@ -6,5 +6,8 @@ class Division(Calculation):
         """returns  division results"""
         value_quotient = self.values[0]
         for value in self.values[1:]:
-            value_quotient  /= value
+            try:
+                value_quotient  /= value
+            except ZeroDivisionError:
+                print("Not Divisible by Zero")
         return value_quotient
