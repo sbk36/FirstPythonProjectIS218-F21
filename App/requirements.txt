@@ -3,3 +3,4 @@ uwsgi
 pytest-cov
 pytest-pylint
 pytest-flake8
+pandas
