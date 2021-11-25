@@ -1,4 +1,4 @@
-"""This shows example polymorphism"""
+"""This shows example polymorphism """
 
 from calc.addition import Addition
 from calc.subtraction import Subtraction
