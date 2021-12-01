@@ -2,7 +2,7 @@
 # Name - Smeet Kathiria, NET ID -sbk36
 # This repo contain code files for calculator that performs calculations and testing on external data files.
 # Starting point of the program can be found in test_file_handling.py. 
-[![Build Status](https://app.travis-ci.com/sbk36/FirstPythonProjectIS218-F21.svg?branch=calc_refactor_SK5)](https://app.travis-ci.com/sbk36/FirstPythonProjectIS218-F21)
+[![Build Status](https://app.travis-ci.com/sbk36/FirstPythonProjectIS218-F21.svg?branch=calc_file_handling_SK)](https://app.travis-ci.com/sbk36/FirstPythonProjectIS218-F21)
 
 ![test_result](App/images/i3.png)
 
