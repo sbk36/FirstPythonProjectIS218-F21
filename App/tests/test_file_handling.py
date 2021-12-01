@@ -13,7 +13,6 @@ def test_file_handling():
     """This function calls the appropriate function to perform calculations"""
     print(os.getcwd())
     for filename in os.listdir(MAIN_PATH):
-        print(filename)
 
         column_names = ["TimeStamp", "FileName", "Record_Number", "Operation", "Result"]
         if filename == "addition_test.csv":
