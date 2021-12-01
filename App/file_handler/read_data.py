@@ -1,10 +1,8 @@
+"Read data from csv file"
 import pandas as pd
 
-AdditionPath = "/home/myuser/data/addition_test.csv"
-
-def read_data(TestDataPath):
+def read_data(test_data_path):
     "Read data from csv file"
-    data= pd.read_csv(TestDataPath)
-    df = pd.DataFrame(data, columns=['Value 1','Value 2','Value 3','Result'])
-    return df
-
+    data= pd.read_csv(test_data_path)
+    data_frame = pd.DataFrame(data, columns=['Value 1','Value 2','Value 3','Result'])
+    return data_frame
