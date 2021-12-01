@@ -5,13 +5,13 @@ import os
 from file_handler.read_data import pd,read_data
 from calc.perform_test import perform_test_on_df
 
-MAIN_PATH = "/home/myuser/data/"
-RESULT_PATH = "/home/myuser/results/"
+MAIN_PATH = os.getcwd() + "/data/"
+RESULT_PATH = os.getcwd() + "/results/"
 
 
 def test_file_handling():
     """This function calls the appropriate function to perform calculations"""
-    for filename in os.listdir("/home/myuser/data"):
+    for filename in os.listdir(MAIN_PATH):
 
         column_names = ["TimeStamp", "FileName", "Record_Number", "Operation", "Result"]
         if filename == "addition_test.csv":
