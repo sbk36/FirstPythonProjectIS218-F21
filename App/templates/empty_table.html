@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important {
+            color: #336699;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <h3 style="padding-top: 25px;text-align: center">Message</h3>
+    <p style="font-weight: 350;text-align: center">{{ "Table is Empty, Please perform some calulation!" }} </p>  <br>
+
+
+
+{% endblock %}
