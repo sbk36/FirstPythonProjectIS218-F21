@@ -1,6 +1,6 @@
 """Subtraction Class"""
 
-from calc.calculations.calculation import Calculation
+from App.calc.calculations.calculation import Calculation
 
 class Subtraction(Calculation):
     """subtraction calculation object"""

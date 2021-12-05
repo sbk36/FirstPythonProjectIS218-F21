@@ -3,7 +3,7 @@ and tests calculation and saves the logs files in results folder"""
 import os
 
 from file_handler.read_data import pd,read_data
-from calc.perform_test import perform_test_on_df
+from App.calc.perform_test import perform_test_on_df
 
 MAIN_PATH = os.getcwd() + "/data/"
 RESULT_PATH = os.getcwd() + "/results/"

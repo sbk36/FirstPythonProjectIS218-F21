@@ -1,6 +1,6 @@
 """Testing the Calculator"""
 import time
-from calc.calculator import Calculator
+from App.calc.calculator import Calculator
 
 def perform_test_on_df(dataframe,filename,operation,operand):
     """ This function takes the csv data and performs the desired calculation on them"""

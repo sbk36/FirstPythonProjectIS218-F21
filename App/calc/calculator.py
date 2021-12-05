@@ -1,6 +1,6 @@
 """ This is the increment function"""
 
-from calc.history.calculations import Calculations
+from App.calc.history.calculations import Calculations
 
 class Calculator:
     """ This is the Calculator class"""

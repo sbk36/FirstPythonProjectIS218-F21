@@ -1,6 +1,6 @@
 """Testing Division"""
 import unittest
-from calc.calculations.division import Division
+from App.calc.calculations.division import Division
 
 class DivisionTest(unittest.TestCase):
     """Unit Test Class"""

@@ -1,8 +1,8 @@
 """Calculation history Class"""
-from calc.calculations.addition import Addition
-from calc.calculations.subtraction import Subtraction
-from calc.calculations.multiplication import Multiplication
-from calc.calculations.division import Division
+from App.calc.calculations.addition import Addition
+from App.calc.calculations.subtraction import Subtraction
+from App.calc.calculations.multiplication import Multiplication
+from App.calc.calculations.division import Division
 
 class Calculations:
     """ Calculations"""

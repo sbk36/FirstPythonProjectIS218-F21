@@ -1,5 +1,5 @@
 """ calculation division class"""
-from calc.calculations.calculation import Calculation
+from App.calc.calculations.calculation import Calculation
 class Division(Calculation):
     """ calculation division class"""
     def get_result(self):
@@ -9,5 +9,6 @@ class Division(Calculation):
             try:
                 value_quotient  /= value
             except ZeroDivisionError:
+                value_quotient = "Not Divisible by Zero"
                 print("Not Divisible by Zero")
         return value_quotient

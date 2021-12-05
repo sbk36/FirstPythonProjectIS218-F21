@@ -1,5 +1,5 @@
 """Multiplication Class"""
-from calc.calculations.calculation import Calculation
+from App.calc.calculations.calculation import Calculation
 
 class Multiplication(Calculation):
     """subtraction calculation object"""
