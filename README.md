@@ -1,4 +1,4 @@
-# Name - Smeet Kathiria, NET ID -sbk36
+# Name - Smeet Kathiria, NET ID - sbk36
 # This repo contain code files for calculator that performs calculations on a webpage, using html, flask, nginx docker.
 
 
