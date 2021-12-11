@@ -4,6 +4,8 @@
 # In the video you will be able to see that when caclulation is performed it is saved automatically in data.csv file, which is shown on right side of the screen.
 # Than that data.csv file is used to populate the table in webpage. 
 # Data validation and error handling is also implemented, for example on missing or invalid values the calculator will show error message and those logs are also saved in the table.
+# Starting point of the program can be found below in main code
+[Main Code](https://github.com/sbk36/FirstPythonProjectIS218-F21/blob/calc_p3_tables/App/app.py)
 
 # Below Link contains video of the working functionality of what is described above. 
 # You will need office 365 account to view the video, NJIT students have free access to office 365. If link does not work kindly contact me on sbk36@njit.edu. 
