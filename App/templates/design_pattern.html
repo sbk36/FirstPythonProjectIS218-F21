@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+
+    <section id="title">
+
+        <div class="container-fluid">
+
+
+            <div class="headingText">
+                <h1 class="border-bottom headingTextColor"> Design Pattern</h1>
+            </div>
+
+            <div class="flex-flow">
+                <div id="AAA">
+                    <h4 style="text-align: center; padding-top: 15px"><strong>Command Design Pattern</strong></h4>
+                    <p class="lead">
+                        Command is a behavioral design pattern that converts a request into a stand-alone object that
+                        contains all of the request's information. This transformation allows you to pass requests as
+                        method
+                        arguments, delay or queue the execution of a request, and support undoable operations.Lets see
+                        an
+                        example,
+                    </p>
+
+                    <p class="lead"> To Follow along you can reference the code here -> <a
+                            href="https://github.com/sbk36/FirstPythonProjectIS218-F21/blob/calc_refactor_SK5/App/calc/calculator.py">
+                        Github </a></p>
+                    <p class="lead"> Here we are using command design pattern by sending commands to the calculations
+                        library by doing what it needs to do.Like add subtraction, add multiplication etc. </p>
+                    <p class="lead"> The advantage of command design pattern is that:- </p>
+                    <ol class="lead"> It separates the classes that invoke the operation from the object that knows how
+                        to
+                        carry it out.
+
+                    </ol>
+                    <ol class="lead"> It provides a queue system that allows you to create a sequence of commands.
+
+                    </ol>
+                    <ol class="lead"> The addition of a new command is simple and can be accomplished without modifying
+                        the
+                        existing
+                        code.
+
+                    </ol>
+                    <ol class="lead"> The Command pattern can also be used to define a rollback system; for example, in
+                        the
+                        Wizard
+                        example, we could write a rollback method.
+
+                    </ol>
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/design_pattern/dp1.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h5 style="padding-top: 10px ; text-align: center"><strong> Factory Design Pattern </strong></h5>
+                    <p class="lead">A Factory Method is a creational design pattern that provides an interface for
+                        creating
+                        objects in a superclass while allowing subclasses to change the type of objects created.Let's
+                        see an
+                        example.</p>
+
+
+                    <p class="lead"> To Follow along you can reference the code here -> <a
+                            href="https://github.com/sbk36/FirstPythonProjectIS218-F21/blob/calc_part_2_SK/App/polymorphism.py">
+                        Github </a></p>
+                    <p class="lead"> In the below code we can see that the create method instantiate a division object
+                        and
+                        will be returned.</p>
+                    <p class="lead"> The benefit of using create method and factory design pattern is that it
+                        centralizes
+                        the instantiation of the object so there's only one place to do it rather than instantiating or
+                        changing it on multiple different places.</p>
+
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/design_pattern/dp2.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead" style="padding-top: 10px"> The result below demonstrates how the same object calls
+                        two
+                        different class method
+                        addition and subtraction and provided corresponding result from each of the class.</p>
+                    <p class="lead"> The advantages of factory desgin pattern method are:-</p>
+                    <ol class="lead"> The Factory Method Pattern allows sub-classes to specify the type of object to be
+                        created.
+                    </ol>
+                    <ol class="lead"> It encourages loose coupling by removing the need to bind application-specific
+                        classes
+                        into code. That
+                        is, the code only interacts with the resulting interface or abstract class, so it will work with
+                        any
+                        classes that implement that interface or extend that abstract class.
+
+
+                    </ol>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    </body>
+
+
+{% endblock %}
+
+
+
+

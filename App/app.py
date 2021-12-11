@@ -3,7 +3,7 @@ from flask import Flask, request
 from flask import render_template
 from App.calc.calculator import Calculator
 import pandas as pd
-import csv
+import os
 app = Flask(__name__)
 
 @app.route("/")
@@ -41,14 +41,29 @@ def basicform():
 
 @app.route("/table", methods=['GET', 'POST'])
 def showtable():
-    with open('App/results/data.csv', 'r') as csvfile:
-        csv_dict = [row for row in csv.DictReader(csvfile)]
-        if len(csv_dict) == 0:
-            return render_template('empty_table.html')
-        else:
-            df = pd.read_csv('App/results/data.csv', header=None)
-            data = df.values.tolist()
-            return render_template('bootstrap_table.html', data = data)
+    if os.stat("App/results/data.csv").st_size == 0:
+        return render_template('empty_table.html')
+    else:
+        df = pd.read_csv('App/results/data.csv', header=None)
+        data = df.values.tolist()
+        return render_template('bootstrap_table.html', data=data)
+
+
+@app.route("/pylint", methods=['GET', 'POST'])
+def article1():
+    return render_template('pylint.html')
+
+@app.route("/aaa", methods=['GET', 'POST'])
+def article2():
+    return render_template('aaa.html')
+
+@app.route("/oop", methods=['GET', 'POST'])
+def article3():
+    return render_template('oop.html')
+
+@app.route("/design_pattern", methods=['GET', 'POST'])
+def article4():
+    return render_template('design_pattern.html')
 
 @app.route("/bad/<value1>/<value2>")
 def bad_calc(value1,value2):

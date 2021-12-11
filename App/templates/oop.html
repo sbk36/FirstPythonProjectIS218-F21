@@ -1,0 +1,242 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+
+    <section id="title">
+
+        <div class="container-fluid">
+
+
+            <div class="headingText">
+                <h1 class="border-bottom headingTextColor">Object Oriented Programming</h1>
+            </div>
+
+            <div class="flex-flow">
+                <div id="AAA">
+                    <h4 style="text-align: center; padding-top: 15px"><strong> What is OOP?</strong></h4>
+                    <p class="lead">
+                        Object-oriented Programming is a programming paradigm in Python that utilises objects and
+                        classes.
+                        It aims to incorporate real-world entities such as inheritance, polymorphisms, encapsulation,
+                        and so
+                        on into programming. The main idea behind OOPs is to bind the data and the functions that work
+                        on it
+                        as a single unit so that no other part of the code can access it.
+
+                    </p>
+                    <p class="lead"> The four main principles of Object-Oriented Programming (OOP's) are:- </p>
+                    <ol class="lead"> Encapsulation</ol>
+                    <ol class="lead"> Polymorphism</ol>
+                    <ol class="lead"> Abstraction</ol>
+                    <ol class="lead"> Inheritance</ol>
+                    <strong> </strong>
+                    <h5><strong>Let's try to understand how Encapsulation works,</strong></h5>
+                    <p class="lead">In programming, encapsulation is the process of combining elements to form a new
+                        entity
+                        for the purpose of covering or protecting information. Encapsulation is a feature of object
+                        design
+                        in object-oriented programming. It means that all of the object's data is contained and hidden
+                        within the object, and only members of that class have access to it.Let's see an example</p>
+
+
+                    <p class="lead"> To Follow along you can reference the code here -> <a
+                            href="https://github.com/sbk36/FirstPythonProjectIS218-F21/blob/calc_part_2_SK/App/calc/addition.py">
+                        Github </a></p>
+                    <p class="lead"> Here we have the addition class that inherits value A and B from the calculation
+                        class.</p>
+                    <p class="lead"> How the encapsulation comes into play is in the keyword self, where we are
+                        referencing
+                        the data contained in the instance of the object.
+                        and since we are a member of that class we can access the underlying value which is hidden from
+                        public and is implicit.
+                    </p>
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/oop/oop1.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h5 style="padding-top: 10px"><strong> Let's try to understand how polymorphism works,</strong></h5>
+                    <p class="lead">Polymorphism is an object-oriented programming concept that refers to a variable's,
+                        function's, or object's ability to take on multiple forms. In a polymorphic programming
+                        language,
+                        class objects from the same hierarchical tree (inherited from a common parent class) can have
+                        functions with the same name but different behaviors.Let's see an example</p>
+
+
+                    <p class="lead"> To Follow along you can reference the code here -> <a
+                            href="https://github.com/sbk36/FirstPythonProjectIS218-F21/blob/calc_part_2_SK/App/polymorphism.py">
+                        Github </a></p>
+                    <p class="lead"> The code below demonstrates how Python can use two different class types
+                        concurrently.
+                        We make a for loop that iterates over a tuple of objects. Then, without regard for the class
+                        type of
+                        each object, call the methods. We presume that these methods exist in each class.</p>
+
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/poly/poly1.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead" style="padding-top: 10px"> The result below demonstrates how the same object calls
+                        two different class method
+                        addition and subtraction and provided corresponding result from each of the class.</p>
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/poly/poly2.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 style="padding-top: 10px"><strong>Let's try to understand how Abstraction works,</strong></h5>
+                    <p class="lead">Abstraction is used to shield users from the internal functionality of a function.
+                        Users
+                        only interact with the function's basic implementation; the inner workings are hidden.Let's see
+                        an example</p>
+
+
+                    <p class="lead"> To Follow along you can reference the code here -> <a
+                            href="https://github.com/sbk36/FirstPythonProjectIS218-F21/tree/calc_part_2_SK/App/calc">
+                        Github </a></p>
+                    <p class="lead"> The code below shows how we can avoid having to explicitly register the class by
+                        subclassing
+                        directly from the base. In this case, Python class management is used to identify
+                        PluginImplementation as a class that implements the abstract PluginBase.</p>
+
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/abstract/abs1.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead" style="padding-top: 10px"> As you can see above Multiplication class subclasses
+                        directly from base class
+                        Calculation which allows us to access all the method that base class has. </p>
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/abstract/abs2.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 style="padding-top: 10px"><strong>Let's try to understand how Inheritance works,</strong></h5>
+                    <p class="lead">
+                        Inheritance allows us to create a class that inherits all of another class's methods and
+                        properties.
+
+                        The class being inherited from is known as the parent class, also known as the base class.
+
+                        A child class is one that inherits from another class, also known as a derived class.Let's see
+                        an example,</p>
+
+
+                    <p class="lead"> To Follow along you can reference the code here -> <a
+                            href="https://github.com/sbk36/FirstPythonProjectIS218-F21/tree/calc_part_2_SK/App/calc">
+                        Github </a></p>
+                    <p class="lead"> The code below shows how Division is using create method which is inhetited from
+                        Calculation class. </p>
+
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/inherit/in1.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead" style="padding-top: 10px"> You might be wondering how is this possible, let see
+                        how. </p>
+                    <p class="lead"> We can see below Division inherits Calculation class through
+                        Division(Calculation),this lets the Division class inherit all the Calcualtion class
+                        method. </p>
+
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/inherit/in2.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead" style="padding-top: 10px"> As you can see below calculation class has create method
+                        which is inherited by division class.</p>
+                    <div class="contentAlign">
+                        <div class="row">
+                            <div class="col-lg-16">
+                                <div class="col-lg-8 ">
+                                    <div class="contentImageIS">
+                                        <img alt="is1" class="rounded float-right  img-fluid"
+                                             src="static/images/inherit/in3.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    </body>
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+

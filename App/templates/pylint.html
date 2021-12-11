@@ -1,0 +1,283 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+
+    <section id="title">
+
+        <div class="container-fluid">
+
+
+            <div class="headingText">
+                <h1 class="border-bottom headingTextColor">Pylint</h1>
+            </div>
+
+            <div class="contentAlign">
+                <div class="row">
+
+
+                    <div class="col-lg-16">
+                        <h3 style="text-align: center"><b> What is Pylint? </b></h3>
+                        <div class="lead articleText">
+                            <p> Pylint acts an assistant in helping user's write better code. It enforces a style guide
+                                that
+                                a user should follow when writing code and notifies the user when the style guide is not
+                                followed by the user. It also notifies user when there is unnecessary code which does
+                                not do
+                                anything or has no particular use case.
+                            </p>
+
+                            <p> Now, we will see how to install and use pylint in your own code for Linux based systems.
+                            </p>
+
+                            <p> To install pylint, run the below command in your project terminal.</p>
+                            <p class="at2"> pip install pylint </p>
+                            <p>After installation is done, using pylint is as simple as running the below command in the
+                                project terminal.</p>
+
+                            <p class="at2"> pylint filename.py </p>
+                            <p>Here filename is your own project file on which you would like to run the pylint. </p>
+                            <p><b> Lets see an example, </b></p>
+                            <p class="ap">Looking at the below <a
+                                    href="https://github.com/sbk36/FirstPythonProjectIS218-F21/blob/calc_refactor_SK5/App/calc/calculations/addition.py">code </a>
+                                looks fine at the first look, we can see that it is
+                                performing
+                                addition of some sort.</p>
+                            <div class="col-lg-8">
+                                <div class="contentImageIS">
+                                    <img alt="is1" class="rounded float-right img-fluid"
+                                         src="static/images/pylint/pylint1.png"/>
+                                </div>
+                            </div>
+                            <p class="ap">Now lets run pylint on the addition.py </p>
+                            <div class="col-lg-8">
+                                <div class="contentImageIS">
+                                    <img alt="is1" class="rounded float-right img-fluid"
+                                         src="static/images/pylint/pylint2.png"/>
+                                </div>
+                            </div>
+                            <p class="ap">We can see above that pylint gave us a docstring error which basically means
+                                that
+                                the
+                                developer forgot to mention a comment indicating the functionality of the class</p>
+
+                            <p class="ap">Lets fix it by writing a comment which indicates the functionality of the
+                                class
+                                which will
+                                help other developers that will see this code.</p>
+                            <div class="col-lg-8 ">
+                                <div class="contentImageIS">
+                                    <img alt="is1" class="rounded float-right  img-fluid"
+                                         src="static/images/pylint/pylint3.png"/>
+                                </div>
+                            </div>
+                            <p class="ap">Now we can see that pylint gave the code rating of 10/10 which means that our
+                                code
+                                has passed
+                                all the pylint related style guide checks.</p>
+                            <div class="col-lg-8">
+                                <div class="contentImageIS">
+                                    <img alt="is1" style="margin-bottom: 5%" class="rounded float-right img-fluid"
+                                         src="static/images/pylint/pylint4.png"/>
+                                </div>
+                            </div>
+
+                            <div class="flex-shrink">
+                                <div id="OOP's Glossary">
+                                    <h4 style="text-align: center"><strong>OOP's Glossary </strong></h4>
+
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Factory">
+                                    <h4>The Factory Method </h4>
+                                    <p>Provides an interface for creating objects in a superclass while allowing
+                                        subclasses
+                                        to change the type of objects created. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Instantiate">
+                                    <h4>Instantiate </h4>
+                                    <p>Instantiation refers to creating an object/instance for a class. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="class">
+                                    <h4>Class </h4>
+                                    <p>A class is a blueprint for the object.
+
+                                        We can think of class as a sketch of a parrot with labels. It contains all the
+                                        details about the name, colors, size etc. Based on these descriptions, we can
+                                        study
+                                        about the parrot. Here, a parrot is an object. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Object">
+                                    <h4>Object </h4>
+                                    <p>An object (instance) is an instantiation of a class. When class is defined, only
+                                        the
+                                        description for the object is defined. Therefore, no memory or storage is
+                                        allocated. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Namespace">
+                                    <h4>Namespace </h4>
+                                    <p>A namespace in Python is a mapping of all the names you've defined to their
+                                        related
+                                        objects.
+
+
+                                        At any given time, different namespaces can coexist, but they are totally
+                                        segregated.
+
+
+                                        When we start the Python interpreter, a namespace containing all of the built-in
+                                        names is established and exists as long as the interpreter is running.
+
+
+                                    </p>
+                                    <p> This is why built-in functions like id(), print(), and others are always
+                                        accessible
+                                        from everywhere in the program. Each module generates a global namespace for
+                                        itself.
+
+
+                                        These several namespaces are separated. As a result, names that appear in
+                                        several
+                                        modules do not clash. </p>
+                                    <p>
+                                        Modules can have a number of different functions and classes.
+
+                                        When a function is invoked, a local namespace is formed with all of the names
+                                        defined in it. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Constructor">
+                                    <h4>Constructor </h4>
+                                    <p>In object-oriented programming, a constructor is a particular method of a class
+                                        or
+                                        structure that initializes a newly formed object of that kind. The constructor
+                                        is
+                                        automatically invoked whenever an object is created. </p>
+                                    <p> A constructor is similar to an instance method in that it can be used to set the
+                                        values of an object's members to default or user-defined values. It normally has
+                                        the
+                                        same name as the class. A constructor, however, is not a legitimate method
+                                        because
+                                        it does not have a return type, despite its resemblance. The constructor
+                                        initializes
+                                        the object rather than performing a task by running code, and it cannot be
+                                        static,
+                                        final, abstract, or synchronized. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Fixtures">
+                                    <h4>Fixtures </h4>
+                                    <p>The procedures and data that make up the arrange phase of a test are defined by
+                                        fixtures. They are functions you define in pytest that serve this purpose. They
+                                        can
+                                        also be used to define the act phase of a test, which is a useful strategy for
+                                        creating more sophisticated tests. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Type Hinting">
+                                    <h4>Type Hinting </h4>
+                                    <p>Type hinting is a formal approach for indicating the type of a value in your
+                                        Python
+                                        code statically. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Type Casting">
+                                    <h4>Type Casting </h4>
+                                    <p>Type Casting is the process of converting a literal of one type to another in
+                                        Python.
+                                    </p>
+                                    <p>For typecasting, the built-in functions int(), float(), and str() should be
+                                        used. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="UnitTest">
+                                    <h4>UnitTest </h4>
+                                    <p>Individual components of a software program or application are tested as part of
+                                        the
+                                        unit testing process. The primary goal is to ensure that all of the individual
+                                        components are functioning properly. The smallest software component that can be
+                                        tested is known as a unit. It has a single output and a few inputs in most
+                                        cases. </p>
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Static Method">
+                                    <h4>Static Method </h4>
+                                    <p> Static methods are methods that are connected to a class rather than its object,
+                                        similar to class methods.They do not involve the construction of a class
+                                        instance.
+                                        As a result, they are independent of the object's state. </p>
+                                    <p> The following is the distinction between a static method and a class
+                                        method: </p>
+                                    <ol> The static method has no knowledge of the class and is just concerned with the
+                                        parameters.
+                                    </ol>
+                                    <ol> The static method has no knowledge of the class and is just concerned with the
+                                        parameters.
+                                    </ol>
+
+                                    <ol> Since the class method's parameter is always the class itself, it works with
+                                        the
+                                        class.
+                                    </ol>
+
+                                    <ol> Since the class method's parameter is always the class itself, it works with
+                                        the
+                                        class.
+                                    </ol>
+
+                                </div>
+                            </div>
+                            <div class="flex-shrink">
+                                <div id="Facade">
+                                    <h4>Facade </h4>
+                                    <p>Facade
+
+                                        Provides a simplified interface to a library, a framework, or any other complex
+                                        set
+                                        of classes. </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="row-cols-auto"><p>&nbsp;</p></div>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    </body>
+
+{% endblock %}
+
+
+
+
+
+
