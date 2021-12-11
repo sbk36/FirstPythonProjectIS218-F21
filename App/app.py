@@ -20,12 +20,12 @@ def basicform():
         #make the tuple
         my_tuple = (value1, value2)
         #this will call the correct operation
-        if value1 and value2:
+        if value1 and value2 and value1.isdigit() and value2.isdigit():
             getattr(Calculator, operation)(my_tuple)
             result = str(Calculator.get_last_result_value())
             return render_template('result.html', value1=value1, value2=value2, operation=operation, result=result)
         else:
-            return render_template('result.html', value1=value1, value2=value2, operation=operation, result="Missing Value")
+            return render_template('result.html', value1=value1, value2=value2, operation=operation, result="Missing or invalid Value")
 
     # Displays the form because if it isn't a post it is a get request
     else:
