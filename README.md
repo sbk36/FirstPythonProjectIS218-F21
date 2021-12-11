@@ -1,7 +1,10 @@
 # FirstPythonProjectIS601-F21
 # Name - Smeet Kathiria, NET ID -sbk36
 # This repo contain code files for calculator that performs calculations and testing on external data files.
-# Starting point of the program can be found in test_file_handling.py. 
+# Starting point of the program can be found in below link in test_file_handling.py. 
+
+[Test File Handling](https://github.com/sbk36/FirstPythonProjectIS218-F21/blob/calc_file_handling_SK/App/tests/test_file_handling.py)
+
 [![Build Status](https://app.travis-ci.com/sbk36/FirstPythonProjectIS218-F21.svg?branch=calc_file_handling_SK)](https://app.travis-ci.com/sbk36/FirstPythonProjectIS218-F21)
 
 ![test_result](App/images/i3.png)
@@ -26,4 +29,3 @@
 #If link does not work kindly contact me on sbk36@njit.edu.
 
 [Working Demo Video](https://njit0-my.sharepoint.com/:v:/g/personal/sbk36_njit_edu/EUe_aO48U_ZKjXhVDyh5H8wB0qJq_VEb-drqNiFRBpj-Zw?e=dFyEgq)
-
