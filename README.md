@@ -6,6 +6,8 @@
 # Data validation and error handling is also implemented, for example on missing or invalid values the calculator will show error message and those logs are also saved in the table.
 # Starting point of the program can be found below in app.py code
 [Code](https://github.com/sbk36/FirstPythonProjectIS218-F21/blob/calc_p3_final/App/app.py)
+# Pytest 
+![test_result](App/images/cov.png)
 # Four Articles have also been added to the webpage that gives information on different programming concepts.
 # Below Link contains video of the working functionality of what is described above. 
 # You will need office 365 account to view the video, NJIT students have free access to office 365. If link does not work kindly contact me on sbk36@njit.edu. 
